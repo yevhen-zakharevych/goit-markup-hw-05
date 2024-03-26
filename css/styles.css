@@ -3,7 +3,7 @@
   --font-family-primary: 'Roboto', sans-serif;
   --font-family-secondary: 'Raleway', sans-serif;
   --color-text: #434455;
-  --color-subtle-text: #8e8f99;
+  --color-subtle-text: #8e8f99; /*light-slate:*/
   --background-color: #ffffff;
   --color-primary: #4d5ae5; /* iris */
   --color-accent: #e7e9fc;
@@ -515,6 +515,116 @@ img {
 
 .order-form-description {
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: var(--color-subtle-text);
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+}
+
+.form-input {
+  border-radius: 4px;
+  padding: 11px 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 100%;
+  outline: none;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+}
+
+.form-control-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--color-dark);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.form-input:focus + .form-control-icon {
+  fill: var(--color-primary);
+}
+
+.form-textarea {
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: none;
+  font-size: 12px;
+  resize: none;
+  height: 120px;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.form-textarea:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.checkbox-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.checkbox-label {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: var(--color-subtle-text);
+}
+
+.checkbox-link {
+  text-decoration: underline;
+  color: var(--color-primary);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-link:hover {
+  color: var(--color-active);
+}
+
+.actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.order-form-button {
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--color-primary);
+  border: none;
+  cursor: pointer;
+  color: var(--color-white);
+  width: 169px;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-button:hover,
+.order-form-button:focus {
+  background-color: var(--color-active);
 }
 
 /* #endregion Studio Page */
