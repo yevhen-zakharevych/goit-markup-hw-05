@@ -482,6 +482,24 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe-form-block">
+          <p class="subscribe-form-text">Subscribe</p>
+          <form name="subscribeForm" class="subscribe-form">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscribe-form-button">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/images.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- #endregion -->
@@ -494,6 +512,17 @@
             <use href="./images/images.svg#icon-close"></use>
           </svg>
         </button>
+
+        <p class="order-form-description">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="order-form" name="orderForm" autocomplete="off">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
 

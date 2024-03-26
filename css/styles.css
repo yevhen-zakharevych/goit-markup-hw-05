@@ -5,7 +5,7 @@
   --color-text: #434455;
   --color-subtle-text: #8e8f99;
   --background-color: #ffffff;
-  --color-primary: #4d5ae5;
+  --color-primary: #4d5ae5; /* iris */
   --color-accent: #e7e9fc;
   --color-light: #f4f4fd; /* cloud */
   --color-active: #404bbf; /* ocean */
@@ -181,6 +181,10 @@ img {
   max-width: 264px;
 }
 
+.social-block {
+  margin-right: 80px;
+}
+
 .social-list {
   display: flex;
   margin-top: 16px;
@@ -205,6 +209,52 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--color-success);
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.subscribe-input {
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding: 8px 16px;
+  color: var(--color-white);
+  font-size: 12px;
+}
+
+.subscribe-input::placeholder {
+  color: var(--color-white);
+}
+
+.subscribe-form-button {
+  border-radius: 4px;
+  padding: 8px 24px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-form-button:hover,
+.subscribe-form-button:focus,
+.subscribe-form-button:active {
+  background-color: var(--color-active);
+}
+
+.subscribe-form-button svg {
+  fill: var(--color-white);
 }
 
 /* #endregion Footer */
@@ -436,7 +486,7 @@ img {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 1px 1px 0 rgba(0, 0, 0, 0.14);
   background: var(--color-dairy);
-  padding: 24px;
+  padding: 72px 24px 24px;
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -461,6 +511,10 @@ img {
   background-color: var(--color-active);
   fill: var(--color-white);
   border-color: var(--color-active);
+}
+
+.order-form-description {
+  text-align: center;
 }
 
 /* #endregion Studio Page */
