@@ -551,19 +551,24 @@
             class="form-textarea"
           ></textarea>
 
-          <div class="checkbox-control">
+          <label class="checkbox-control">
             <input
               type="checkbox"
               name="checkbox"
               id="checkbox"
               class="checkbox-input"
             />
+            <span class="checkmark">
+              <svg width="10" height="8">
+                <use href="./images/images.svg#icon-checkbox"></use>
+              </svg>
+            </span>
 
-            <label for="checkbox" class="checkbox-label">
+            <span for="checkbox" class="checkbox-label">
               I accept the terms and conditions of the
               <a href="#" class="checkbox-link">Privacy Policy</a>
-            </label>
-          </div>
+            </span>
+          </label>
 
           <div class="actions">
             <button type="submit" class="order-form-button">Send</button>

@@ -185,6 +185,13 @@ img {
   margin-right: 80px;
 }
 
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .social-list {
   display: flex;
   margin-top: 16px;
@@ -217,6 +224,13 @@ img {
   margin-top: 16px;
 }
 
+.subscribe-form-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .subscribe-input {
   border: 1px solid var(--color-white);
   border-radius: 4px;
@@ -238,6 +252,10 @@ img {
   padding: 8px 24px;
   background-color: var(--color-primary);
   color: var(--color-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   border: none;
   display: flex;
   justify-content: center;
@@ -516,6 +534,7 @@ img {
 .order-form-description {
   text-align: center;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 
 .form-label {
@@ -585,6 +604,47 @@ img {
   align-items: center;
   gap: 8px;
   margin-top: 16px;
+  position: relative;
+  cursor: pointer;
+  padding-left: 24px;
+  height: 16px;
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkmark svg {
+  fill: transparent;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-control input:checked ~ .checkmark {
+  background-color: var(--color-active);
+  border-color: var(--color-active);
+}
+
+.checkbox-control input:checked ~ .checkmark svg {
+  fill: var(--color-white);
 }
 
 .checkbox-label {
@@ -616,6 +676,7 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--color-primary);
   border: none;
+  font-weight: 500;
   cursor: pointer;
   color: var(--color-white);
   width: 169px;
